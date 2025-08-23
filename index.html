@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay-On</title>
+    <!-- Desiy UI and TailWind CSS  connnect-->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#f4f5f7] h-[100vh] flex flex-col justify-center items-center ">
+    <div class="h-[130px] w-[300px]  bg-[url(./assets/bg.png)] bg-cover flex justify-center items-center">
+        <img src="assets/Group.png" alt="">
+    </div>
+
+    <form class=" bg-white rounded-2xl p-10 w-[350px]">
+        <div>
+            <label class="font-semibold">Mobile Number</label>
+            <br/>
+            <input type="text" placeholder="Your Mobile Number" class="input input-accent rounded-3xl" />
+        </div>
+        <div class="mt-5">
+            <label class="font-semibold">4-Digits PIN</label>
+            <br/>
+            <input type="text" placeholder="Enter Your Pin" class="input input-accent  rounded-3xl" />
+        </div>
+        <button class="btn text-white mt-3 w-full rounded-3xl bg-[#0874F2]">Login</button>
+    </form>
+</body>
+</html>
