@@ -4,8 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <!-- Desiy UI and TailWind CSS  connnect-->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <!-- font awesome cdn -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <h1>Welcome To Pay On</h1>
+
+<body class="bg-[#f4f5f7] h-[100vh]">
+    
+        <div class="max-w-lg mx-auto bg-white rounded-b-xl p-5">
+            <div class=" min-h-[50px] flex justify-between items-center  border-b-1 border-gray-400 p-5">
+            <div class="flex">
+                <img class="h-[40px]" src="assets/Group.png" alt="">
+                <div class="ml-5">
+                    <h2 class="font-bold">$<span>45000</span></h2>
+                    <p class="text-[#08080880]">Avilable Balance</p>
+                </div>
+            </div>
+            <div>
+                <button class="btn text-[#08080880]"><i class="fa-solid fa-arrow-right-from-bracket -rotate-180 text-gray-800"></i>Log Out</button>
+            </div>
+        </div>
+
+        <div >
+            <h1 class="text-2xl font-bold">Welcome to Pay-Go</h1>
+            <p class="text-[#08080880]">Enjoy easy and convenient financial services with us. Cashout charge is low and  </p>
+        </div>
+
+        <div class=" h-[300px]
+        text-center p-2 grid grid-cols-3  gap-4 ">
+            <div class="border-2 border-gray-300 rounded-xl">
+                <img class="mx-auto" src="assets/wallet1.png" alt="">
+                <h2 >Add Money</h2>
+            </div>
+            <div class="border-2 border-gray-300 rounded-xl">
+                <img class="mx-auto" src="assets/send1.png" alt="">
+                <h2 >Add Money</h2>
+            </div>
+            <div class="border-2 border-gray-300 rounded-xl">
+                <img class="mx-auto" src="assets/money1.png" alt="">
+                <h2 >Add Money</h2>
+            </div>
+            <div class="border-2 border-gray-300 rounded-xl">
+                <img class="mx-auto" src="assets/wallet1.png" alt="">
+                <h2 >Add Money</h2>
+            </div>
+            <div class="border-2 border-gray-300 rounded-xl">
+                <img class="mx-auto" src="assets/wallet1.png" alt="">
+                <h2 >Add Money</h2>
+            </div>
+            <div class="border-2 border-gray-300 rounded-xl">
+                <img class="mx-auto" src="assets/wallet1.png" alt="">
+                <h2 >Add Money</h2>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="all-form-sections max-w-lg mx-auto m-[10px]">
+            <div>
+                <h1>Add Money</h1>
+                <form class="bg-white rounded-b-xl p-5">
+                    <div>
+                        <h1>Select a Bank</h1>
+                        <select class="select bg-white mt-3 rounded-3xl " >
+                        <option disabled selected>Choose a Bank</option>
+                        <option>Islami Bank PLC</option>
+                        <option>Brac Bank LT</option>
+                        <option>NCC Bank PLC</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="font-semibold">Bank Account Number</label>
+                        <br/>
+                        <input  type="text" placeholder="Enter 11 Digit Number" class="input input-accent rounded-3xl" />
+                    </div>
+                    <div>
+                        <label class="font-semibold">Bank Account Number</label>
+                        <br/>
+                        <input  type="text" placeholder="Enter 11 Digit Number" class="input input-accent rounded-3xl" />
+                    </div>
+                    <div>
+                        <label class="font-semibold">Bank Account Number</label>
+                        <br/>
+                        <input " type="text" placeholder="Enter 11 Digit Number" class="input input-accent rounded-3xl" />
+                    </div>
+                </form>
+            </div>
+
+        </div>
 </body>
 </html>
