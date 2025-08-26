@@ -12,6 +12,7 @@ document.getElementById('login').addEventListener('click',function(e)
 
     if(mobileConverted === mobile && pinConverted === pin)
     {
+        /** for go to next pasge */
         window.location.href ='./home.html'
     }
     else

@@ -18,7 +18,7 @@
             <div class="flex">
                 <img class="h-[40px]" src="assets/Group.png" alt="">
                 <div class="ml-5">
-                    <h2 class="font-bold">$<span>45000</span></h2>
+                    <h2 class="font-bold">$<span id="balance">45000</span></h2>
                     <p class="text-[#08080880]">Avilable Balance</p>
                 </div>
             </div>
@@ -34,41 +34,41 @@
 
         <div class=" h-[300px]
         text-center p-2 grid grid-cols-3  gap-4 ">
-            <div class="border-2 border-gray-300 rounded-xl">
+            <div id="add-money-btn" class="border-2 border-gray-300 text-center p-3 rounded-xl">
                 <img class="mx-auto" src="assets/wallet1.png" alt="">
                 <h2 >Add Money</h2>
             </div>
-            <div class="border-2 border-gray-300 rounded-xl">
+            <div id="cash-out-btn" class="border-2 border-gray-300 rounded-xl">
                 <img class="mx-auto" src="assets/send1.png" alt="">
-                <h2 >Add Money</h2>
+                <h2 >Cash Out</h2>
             </div>
             <div class="border-2 border-gray-300 rounded-xl">
                 <img class="mx-auto" src="assets/money1.png" alt="">
-                <h2 >Add Money</h2>
+                <h2 >Transfer Money</h2>
             </div>
             <div class="border-2 border-gray-300 rounded-xl">
-                <img class="mx-auto" src="assets/wallet1.png" alt="">
-                <h2 >Add Money</h2>
+                <img class="mx-auto" src="assets/bonus1.png" alt="">
+                <h2 >Get Bonus</h2>
             </div>
             <div class="border-2 border-gray-300 rounded-xl">
-                <img class="mx-auto" src="assets/wallet1.png" alt="">
-                <h2 >Add Money</h2>
+                <img class="mx-auto" src="assets/purse1.png" alt="">
+                <h2 >Pay Bill</h2>
             </div>
-            <div class="border-2 border-gray-300 rounded-xl">
-                <img class="mx-auto" src="assets/wallet1.png" alt="">
-                <h2 >Add Money</h2>
+            <div class="border-2 border-gray-300 rounded-xl ">
+                <img class="mx-auto" src="assets/transaction1.png" alt="">
+                <h2 >Transcation</h2>
             </div>
 
         </div>
         </div>
 
         <div class="all-form-sections max-w-lg mx-auto m-[10px]">
-            <div>
-                <h1>Add Money</h1>
+            <div id="add-money-card" >
+                <h1 class="my-5 font-bold">Add Money</h1>
                 <form class="bg-white rounded-b-xl p-5">
                     <div>
-                        <h1>Select a Bank</h1>
-                        <select class="select bg-white mt-3 rounded-3xl " >
+                        <h1 class="font-semibold">Select a Bank</h1>
+                        <select id="bank" class="select bg-white mt-3 rounded-3xl w-full " >
                         <option disabled selected>Choose a Bank</option>
                         <option>Islami Bank PLC</option>
                         <option>Brac Bank LT</option>
@@ -78,21 +78,51 @@
                     <div>
                         <label class="font-semibold">Bank Account Number</label>
                         <br/>
-                        <input  type="text" placeholder="Enter 11 Digit Number" class="input input-accent rounded-3xl" />
+                        <input id="account-number"  type="text" placeholder="Enter 11 Digit Number" class="input input-accent rounded-3xl w-full" />
                     </div>
                     <div>
-                        <label class="font-semibold">Bank Account Number</label>
+                        <label class="font-semibold">Amount to Add</label>
                         <br/>
-                        <input  type="text" placeholder="Enter 11 Digit Number" class="input input-accent rounded-3xl" />
+                        <input id="add-amount"  type="text" placeholder="Enter Amount to Add " class="input input-accent rounded-3xl w-full" />
                     </div>
                     <div>
-                        <label class="font-semibold">Bank Account Number</label>
+                        <label class="font-semibold">Pin Number</label>
                         <br/>
-                        <input " type="text" placeholder="Enter 11 Digit Number" class="input input-accent rounded-3xl" />
+                        <input  id="pin" type="text" placeholder="Enter Pin Number" class="input input-accent rounded-3xl w-full" />
+
+                        <button id="add-money"  class="btn text-white mt-3 w-full rounded-3xl bg-[#0874F2]">Add Money</button>
                     </div>
                 </form>
             </div>
 
+            <div id="cash-out-card">
+                <!-- cash out -->
+                <h1 class="my-5 font-bold">Cash out</h1>
+                <form class="bg-white rounded-b-xl p-5">
+                    <div>
+                        <h1 class="font-semibold">Select a Bank<h1>
+
+                    </div>
+                    <div>
+                        <label class="font-semibold">Agent Number</label>
+                        <br/>
+                        <input id="account-number"  type="text" placeholder="Enter 11 Digit Number" class="input input-accent rounded-3xl w-full" />
+                    </div>
+                    <div>
+                        <label class="font-semibold">Amount </label>
+                        <br/>
+                        <input id="withdraw-amount" type="text" placeholder="Enter Amount to Withdraw " class="input input-accent rounded-3xl w-full" />
+                    </div>
+                    <div>
+                        <label class="font-semibold">Pin Number</label>
+                        <br/>
+                        <input   type="text" placeholder="Enter Pin Number" class="input input-accent rounded-3xl w-full" />
+
+                        <button id="withdraw-btn"  class="btn text-white mt-3 w-full rounded-3xl bg-[#0874F2]">Withdraw Money</button>
+                    </div>
+                </form>
+            </div>
         </div>
+        <script src="home.js"></script>
 </body>
 </html>
